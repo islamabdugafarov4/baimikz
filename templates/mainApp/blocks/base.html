@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-grid.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-reboot.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/calendar.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/report.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome.min.css' %}">
+</head>
+<body>
+<script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/calendar.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFNXpRyBmcdYD-s-hkAIIr-hMnLEiIcjs&callback=initMap"
+        async defer></script>
+{% block header %}
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+{% block projects %}
+
+{% endblock %}
+{% block about %}
+
+{% endblock %}
+{% block footer %}
+
+{% endblock %}
+</body>
+</html>

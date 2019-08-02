@@ -1,0 +1,28 @@
+{% extends 'mainApp/blocks/base.html' %}
+{% block title %}
+    BaimiKZ
+{% endblock %}
+{% block header %}
+    {% include 'mainApp/mini_blocks/slider.html' %} {# block Slider #}
+    {% include 'mainApp/mini_blocks/navbar.html' %} {# block Navbar #}
+{% endblock %}
+{% block about %}
+    <br>
+    <div class="container">
+        <h1 class="text-lg-center text-justify border border-top border-bottom border-warning text-warning">О
+            компании</h1>
+        <p>Компания "BaiMi" действует на рынке более 3 лет. За этот период нашими специалистами было выполнено около 20
+            проектов.
+            Большой опыт работы, полное понимание вопроса, использование различных технологий, а также индивидуальный
+            доход
+            к каждому проекту
+            помогают нам решать задачи любой сложности.</p>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <section id="footer">
+        {% include 'mainApp/mini_blocks/footer.html' %} {# block footer #}
+        {% include 'mainApp/mini_blocks/copyright.html' %} {# block Copyright #}
+    </section>
+{% endblock %}
